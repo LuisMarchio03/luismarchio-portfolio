@@ -1,6 +1,10 @@
 import { Button } from "./ui/button"
 import { Card } from "./ui/card"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+
 export const ProjectsSection = () => {
     return (
         <section className="mb-32" id="projetos">
@@ -35,13 +39,13 @@ export const ProjectsSection = () => {
           ].map((project, idx) => (
             <Card key={idx} className="bg-[#0a0a1a]/60 backdrop-blur-lg border-indigo-900/30 overflow-hidden group cursor-pointer hover:border-indigo-600/50 transition-all duration-300 shadow-xl">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
-                />
+                <div
+                  className="flex justify-center items-center w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                >
+                  <FontAwesomeIcon icon={faGithub} className="text-[150px] text-white" />
+                </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 h-[280px]">
                 <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-indigo-400 transition-colors">{project.title}</h3>
                 <p className="text-gray-400 mb-4 line-clamp-2">{project.desc}</p>
                 <div className="flex gap-2 flex-wrap mb-4">
@@ -49,12 +53,14 @@ export const ProjectsSection = () => {
                     <span key={i} className="px-3 py-1 bg-indigo-900/40 border border-indigo-800/50 rounded-full text-xs font-medium text-indigo-300">{tech}</span>
                   ))}
                 </div>
+              </div>
+              <div className="p-6">
                 <div className="flex justify-between items-center">
                   <Button className="!rounded-button whitespace-nowrap bg-transparent hover:bg-indigo-900/50 border border-indigo-700/50 text-indigo-400 px-4 py-2 text-sm">
                     <a target="_blank" href={project.link}>Ver Detalhes</a>
                   </Button>
                   <a href="#" className="text-indigo-400 hover:text-indigo-300 transition-colors">
-                    <i className="fas fa-external-link-alt"></i>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </a>
                 </div>
               </div>

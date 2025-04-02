@@ -76,7 +76,7 @@ export const AcademicArticlesSection = () => {
                             ))}
                         </div>
                         <div className="mt-8">
-                            <h3 className="text-xl font-semibold mb-4">
+                            <h3 className="text-xl font-semibold mb-4 text-white">
                                 Áreas de Pesquisa
                             </h3>
                             <div className="flex flex-wrap gap-3">
