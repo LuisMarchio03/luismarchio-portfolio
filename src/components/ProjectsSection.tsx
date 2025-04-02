@@ -12,22 +12,25 @@ export const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "DataViz Pro",
-              desc: "Plataforma de análise de dados em tempo real com visualizações interativas e dashboards personalizáveis",
-              image: "https://public.readdy.ai/ai/img_res/5a9ece0fa2d46cf55d9947b2a0677e88.jpg",
-              tech: ["React", "TypeScript", "Node.js", "D3.js"]
+              title: "Aloy",
+              desc: "Aloy é um assistente virtual projetado para centralizar e automatizar tarefas do dia a dia. Esta versão do projeto implementa a interface desktop utilizando Electron, permitindo interação direta com o sistema operacional, integração com APIs e suporte a comandos de voz.",
+              image: "/Aloy.png",
+              tech: ["Next.j", "TypeScript", "Node.js", "Python.js", "Golang", "Microservices", "DevOps"],
+              link: "https://github.com/LuisMarchio03/aloy-desktop-electron-v0"
             },
             {
-              title: "E-commerce Nexus",
-              desc: "Sistema completo de e-commerce com gestão de produtos, pagamentos e logística integrada",
-              image: "https://public.readdy.ai/ai/img_res/872830ff4dc1dc1f05e0d2da6db9a969.jpg",
-              tech: ["Next.js", "MongoDB", "Stripe", "AWS"]
+              title: "8-bit Chronicles",
+              desc: "Bem-vindo ao 8-Bit Chronicles, um espaço onde a nostalgia do pixel art se encontra com as inovações da era digital. Aqui, exploramos desde os clássicos atemporais dos videogames até as mais recentes tendências em tecnologia, sempre com um olhar analítico e apaixonado.",
+              image: "/blog.png",
+              tech: ["Next.js", "Supabase"],
+              link: "https://github.com/LuisMarchio03/8-bit_chronicles_blog"
             },
             {
-              title: "TaskFlow",
-              desc: "Aplicativo de gerenciamento de projetos com recursos avançados de colaboração em equipe",
-              image: "https://public.readdy.ai/ai/img_res/766d02762a2f5bff4988a4eab5134939.jpg",
-              tech: ["Vue.js", "Firebase", "Express", "Socket.io"]
+              title: "BrigidAI - Dicom Image Manager",
+              desc: "Plataforma de análise de imagens médicas em DICOM, utilizando machine learning para auxiliar diagnósticos. Inclui um sistema seguro de upload e armazenamento, pré-processamento otimizado, inferência com modelos de IA (provavelmente TensorFlow) e uma API eficiente para comunicação entre componentes. A interface web permite visualização avançada, comparação de exames e revisão médica. A infraestrutura é escalável com Kubernetes, monitorada via Prometheus e Grafana, e otimizada para custos com instâncias spot e estratégias híbridas.",
+              image: "/BrigidAI.png",
+              tech: ["Next.j", "TypeScript", "Node.js", "Python.js", "Golang", "Microservices", "Cloud", "DevOps"],
+              link: ""
             }
           ].map((project, idx) => (
             <Card key={idx} className="bg-[#0a0a1a]/60 backdrop-blur-lg border-indigo-900/30 overflow-hidden group cursor-pointer hover:border-indigo-600/50 transition-all duration-300 shadow-xl">
@@ -48,7 +51,7 @@ export const ProjectsSection = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <Button className="!rounded-button whitespace-nowrap bg-transparent hover:bg-indigo-900/50 border border-indigo-700/50 text-indigo-400 px-4 py-2 text-sm">
-                    Ver Detalhes
+                    <a target="_blank" href={project.link}>Ver Detalhes</a>
                   </Button>
                   <a href="#" className="text-indigo-400 hover:text-indigo-300 transition-colors">
                     <i className="fas fa-external-link-alt"></i>

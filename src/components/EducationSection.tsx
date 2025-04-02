@@ -54,11 +54,11 @@ export const EducationSection = () => {
           </Card>
         ))}
       </div>
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <Button className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg font-medium">
           Ver Todos os Artigos
         </Button>
-      </div>
+      </div> */}
     </section>
   )
 }
