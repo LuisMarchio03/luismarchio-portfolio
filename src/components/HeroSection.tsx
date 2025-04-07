@@ -4,7 +4,20 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import bgImage from "../assets/bg.jpg";
 
-export const HeroSection: React.FC = () => {
+export const HeroSection = ({
+    setActiveTab
+}: {
+    setActiveTab: (tab: string) => void
+}) => {
+    const handleNavClick = (sectionId: string) => {
+        setActiveTab(sectionId);
+        document.getElementById(sectionId)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+
+
     return (
         <div className="relative h-screen flex items-center overflow-hidden"
             style={{
@@ -26,7 +39,9 @@ export const HeroSection: React.FC = () => {
                         Estudante de Sistemas de Informação apaixonado por backend, arquitetura de sistemas e computação distribuída. Minha jornada no desenvolvimento começou em 2019 modificando códigos de jogos.
                     </p>
                     <div className="flex gap-4">
-                        <Button className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg font-medium">
+                        <Button 
+                            onClick={() => handleNavClick("projetos")}
+                            className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg font-medium">
                             Ver Projetos
                         </Button>
                         <Button className="!rounded-button whitespace-nowrap bg-transparent hover:bg-white/10 border border-white/30 text-white px-8 py-6 text-lg font-medium">

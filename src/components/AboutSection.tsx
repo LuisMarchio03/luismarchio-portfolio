@@ -10,8 +10,8 @@ export const AboutSection = () => {
                     <div className="relative">
                         <div className="w-full h-[450px] rounded-2xl overflow-hidden border border-indigo-900/30">
                             <img
-                                src="https://public.readdy.ai/ai/img_res/e55bf8105f62f0687116b9b74da7c9d8.jpg"
-                                alt="Lucas Silva"
+                                src="/luis.jpg"
+                                alt="Luís Gabriel Marchió Batista"
                                 className="w-full h-full object-cover object-top"
                             />
                         </div>

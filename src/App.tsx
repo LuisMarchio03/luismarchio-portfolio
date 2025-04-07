@@ -122,7 +122,9 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#050816] text-white">
       {/* Hero Section */}
-      <HeroSection />
+      <HeroSection
+        setActiveTab={setActiveTab}
+      />
 
       {/* Navigation */}
       <Navigation
@@ -153,7 +155,7 @@ const App: React.FC = () => {
         <AcademicArticlesSection />
 
         {/* Blog Section */}
-        <BlogSection />
+        {/* <BlogSection /> */}
 
         {/* Contact Section */}
         <ContactSection

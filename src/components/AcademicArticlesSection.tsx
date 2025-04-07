@@ -21,32 +21,18 @@ export const AcademicArticlesSection = () => {
                         <div className="space-y-8 mt-6">
                             {[
                                 {
-                                    title:
-                                        "Análise Comparativa de Arquiteturas de Microsserviços em Ambientes de Alta Disponibilidade",
-                                    conference:
-                                        "Simpósio Brasileiro de Redes de Computadores (SBRC 2024)",
-                                    area: "Arquitetura de Software, Computação Distribuída",
-                                    abstract:
-                                        "Este artigo apresenta uma análise detalhada das diferentes abordagens arquiteturais para implementação de microsserviços em ambientes que exigem alta disponibilidade e resiliência.",
+                                    title: "IMPACTO DOS MICROSSERVIÇOS NA ESCALABILIDADE E NO CUSTO OPERACIONAL EM AMBIENTES CLOUD-NATIVE",
+                                    conference: "Simpósio Brasileiro de Redes de Computadores (SBRC 2024)",
+                                    area: "Arquitetura de Software, Computação Distribuída, Cloud Computing",
+                                    abstract: "Este artigo apresenta uma análise detalhada das diferentes abordagens arquiteturais para implementação de microsserviços em ambientes que exigem alta disponibilidade e resiliência. A pesquisa compara arquiteturas monolíticas e baseadas em microsserviços aplicadas a um sistema de machine learning para análise de imagens médicas no formato DICOM, utilizando uma infraestrutura cloud-native com containers Docker, orquestração via Kubernetes e monitoramento com Prometheus e Grafana. Os testes consideram três níveis de carga (baixa, média e alta), avaliando desempenho, escalabilidade e custo operacional. Os resultados esperados indicam que, embora os microsserviços ofereçam vantagens significativas em escalabilidade e resiliência, eles exigem maior complexidade de gestão e custos operacionais mais altos. O estudo fornece insights valiosos sobre os trade-offs envolvidos e orienta organizações quanto à viabilidade dessa arquitetura em diferentes contextos."
                                 },
                                 {
-                                    title:
-                                        "Implementação de Protocolos de Comunicação Eficientes para IoT em Redes de Baixa Potência",
-                                    conference:
-                                        "Conferência Latino-Americana de Computação de Alto Desempenho (CLCAR 2023)",
-                                    area: "Redes de Computadores, Internet das Coisas",
-                                    abstract:
-                                        "Estudo sobre otimização de protocolos de comunicação para dispositivos IoT com restrições energéticas, propondo um novo modelo de transmissão de dados que reduz o consumo de energia em 35%.",
-                                },
-                                {
-                                    title:
-                                        "Estratégias de Balanceamento de Carga em Sistemas Distribuídos: Um Estudo de Caso",
-                                    conference:
-                                        "Workshop de Computação em Nuvem (CloudComp 2023)",
-                                    area: "Computação Distribuída, Sistemas em Nuvem",
-                                    abstract:
-                                        "Análise comparativa de diferentes algoritmos de balanceamento de carga em ambientes de nuvem, com foco em métricas de desempenho e escalabilidade.",
-                                },
+                                    title: "USO DO GRAFANA PARA MONITORAMENTO DE INFRAESTRUTURA CLOUD: AWS, AZURE, GCP",
+                                    conference: "Conferência Latino-Americana de Computação de Alto Desempenho (CLCAR 2023)",
+                                    area: "Observabilidade, Monitoramento de Sistemas, Computação em Nuvem, Arquiteturas Multi-cloud",
+                                    abstract: "Este trabalho investiga o uso do Grafana como ferramenta estratégica para o monitoramento de infraestruturas em ambientes de computação em nuvem, com foco nas plataformas AWS, Azure e Google Cloud Platform (GCP). Considerando o crescimento da adoção de arquiteturas multi-cloud, o estudo analisa como o Grafana consolida dados oriundos de serviços como AWS CloudWatch, Azure Monitor e Google Cloud Monitoring em painéis unificados e personalizáveis. Por meio de revisão bibliográfica e experimentações práticas, demonstra-se como a ferramenta contribui para a observabilidade avançada, detecção precoce de falhas, otimização de recursos e aumento da resiliência operacional. Conclui-se que o Grafana se estabelece como um componente essencial para a inteligência operacional em ecossistemas distribuídos e altamente dinâmicos."
+                                }
+
                             ].map((article, idx) => (
                                 <div
                                     key={idx}
@@ -81,12 +67,9 @@ export const AcademicArticlesSection = () => {
                             </h3>
                             <div className="flex flex-wrap gap-3">
                                 {[
-                                    "Redes de Computadores",
                                     "Arquitetura de Software",
                                     "Computação Distribuída",
                                     "Sistemas em Nuvem",
-                                    "Internet das Coisas",
-                                    "Segurança da Informação",
                                 ].map((area, idx) => (
                                     <span
                                         key={idx}

@@ -71,7 +71,9 @@ export const Navigation = ({
                             <TabsTrigger onClick={() => handleNavClick(activeTab)} value="contato" className="text-sm font-medium rounded-full px-5 data-[state=active]:bg-indigo-600 data-[state=active]:text-white">Contato</TabsTrigger>
                         </TabsList>
                     </Tabs>
-                    <Button className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 text-sm">
+                    <Button
+                        onClick={() => handleNavClick('contato')}
+                        className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 text-sm">
                         <FontAwesomeIcon icon={faEnvelope} /> Contato
                     </Button>
                 </div>
