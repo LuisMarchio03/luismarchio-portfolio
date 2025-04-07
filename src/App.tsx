@@ -11,7 +11,7 @@ import { EducationSection } from './components/EducationSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { AcademicArticlesSection } from './components/AcademicArticlesSection';
-import { BlogSection } from './components/BlogSection';
+// import { BlogSection } from './components/BlogSection';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('sobre');
