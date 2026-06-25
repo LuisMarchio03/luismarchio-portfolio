@@ -3,10 +3,10 @@ import { Card } from "./ui/card"
 
 export const EducationSection = () => {
   return (
-    <section className="mb-32" id="educacao">
-      <div className="text-center mb-16">
+    <section className="mb-20 md:mb-32" id="educacao">
+      <div className="text-center mb-12 md:mb-16">
         <p className="text-indigo-400 font-medium mb-2">MINHA FORMAÇÃO</p>
-        <h2 className="text-4xl font-bold">Educação</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">Educação</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

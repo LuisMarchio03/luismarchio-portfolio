@@ -21,15 +21,15 @@ export const ContactSection = ({
   };
 }) => {
   return (
-    <section className="mb-32" id="contato">
-      <div className="text-center mb-16">
+    <section className="mb-20 md:mb-32" id="contato">
+      <div className="text-center mb-12 md:mb-16">
         <p className="text-indigo-400 font-medium mb-2">VAMOS CONVERSAR</p>
-        <h2 className="text-4xl font-bold">Entre em Contato</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">Entre em Contato</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <Card className="bg-[#0a0a1a]/60 backdrop-blur-lg border-indigo-900/30 overflow-hidden shadow-xl">
-          <CardContent className="p-8">
+          <CardContent className="p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-6 inline-block relative text-white">
               Informações de Contato
               <span className="absolute -bottom-2 left-0 w-1/4 h-1 bg-indigo-600"></span>
@@ -85,7 +85,7 @@ export const ContactSection = ({
         </Card>
 
         <Card className="bg-[#0a0a1a]/60 backdrop-blur-lg border-indigo-900/30 overflow-hidden shadow-xl">
-          <CardContent className="p-8">
+          <CardContent className="p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-6 inline-block relative text-white">
               Envie uma Mensagem
               <span className="absolute -bottom-2 left-0 w-1/4 h-1 bg-indigo-600"></span>

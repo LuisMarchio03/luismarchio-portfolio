@@ -1,25 +1,26 @@
+import type { RefObject } from "react"
 import { Card, CardContent } from "./ui/card"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAws, faDocker, faGolang, faJsSquare, faNode, faReact, faGithub, faLinux } from "@fortawesome/free-brands-svg-icons"
-import { faCode } from "@fortawesome/free-solid-svg-icons"
+import { faCode, faRobot } from "@fortawesome/free-solid-svg-icons"
 
 
 export const SkillsSection = ({
     chartRef
 }: {
-    chartRef: any
+    chartRef: RefObject<HTMLDivElement | null>
 }) => {
     return (
-        <section className="mb-32" id="habilidades">
-        <div className="text-center mb-16">
+        <section className="mb-20 md:mb-32" id="habilidades">
+        <div className="text-center mb-12 md:mb-16">
           <p className="text-indigo-400 font-medium mb-2">O QUE EU FAÇO</p>
-          <h2 className="text-4xl font-bold">Minhas Habilidades</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Minhas Habilidades</h2>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <Card className="bg-[#0a0a1a]/60 backdrop-blur-lg border-indigo-900/30 overflow-hidden shadow-xl">
             <CardContent className="p-0">
-              <div ref={chartRef} style={{ height: '450px', width: '100%' }}></div>
+              <div ref={chartRef} className="h-[320px] md:h-[450px] w-full"></div>
             </CardContent>
           </Card>
           
@@ -40,7 +41,8 @@ export const SkillsSection = ({
                   { name: 'AWS', icon: faAws },
                   { name: 'Git', icon: faGithub },
                   { name: 'Docker', icon: faDocker },
-                  { name: 'Linux', icon: faLinux }
+                  { name: 'Linux', icon: faLinux },
+                  { name: 'Claude Code', icon: faRobot }
                 ].map((skill) => (
                   <div key={skill.name} className="bg-gradient-to-br from-indigo-900/40 to-purple-900/40 p-5 rounded-xl border border-indigo-800/30 flex items-center gap-3 hover:border-indigo-600/50 transition-colors group">
                     <FontAwesomeIcon icon={skill.icon} className="text-2xl text-indigo-400 group-hover:text-indigo-300" />

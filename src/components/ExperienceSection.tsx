@@ -4,10 +4,10 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
 
 export const ExperienceSection = () => {
     return (
-        <section className="mb-32" id="experiencia">
-    <div className="text-center mb-16">
+        <section className="mb-20 md:mb-32" id="experiencia">
+    <div className="text-center mb-12 md:mb-16">
       <p className="text-indigo-400 font-medium mb-2">MINHA JORNADA</p>
-      <h2 className="text-4xl font-bold">Experiência Profissional</h2>
+      <h2 className="text-3xl md:text-4xl font-bold">Experiência Profissional</h2>
     </div>
     
     <div className="relative border-l-2 border-indigo-900 ml-6 md:ml-0 md:mx-auto md:max-w-3xl pl-8 space-y-12">

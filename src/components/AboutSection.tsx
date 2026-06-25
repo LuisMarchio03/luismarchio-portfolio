@@ -4,11 +4,11 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons"
 
 export const AboutSection = () => {
     return (
-        <section className="mb-32" id="sobre">
-            <div className="flex flex-col md:flex-row gap-16 items-center">
-                <div className="md:w-1/2">
+        <section className="mb-20 md:mb-32" id="sobre">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
+                <div className="w-full md:w-1/2">
                     <div className="relative">
-                        <div className="w-full h-[450px] rounded-2xl overflow-hidden border border-indigo-900/30">
+                        <div className="w-full h-[320px] md:h-[450px] rounded-2xl overflow-hidden border border-indigo-900/30">
                             <img
                                 src="/luis.jpg"
                                 alt="Luís Gabriel Marchió Batista"
@@ -23,8 +23,8 @@ export const AboutSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="md:w-1/2">
-                    <h2 className="text-4xl font-bold mb-6 inline-block relative">
+                <div className="w-full md:w-1/2">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 inline-block relative">
                         Sobre Mim
                         <span className="absolute -bottom-2 left-0 w-1/3 h-1 bg-indigo-600"></span>
                     </h2>

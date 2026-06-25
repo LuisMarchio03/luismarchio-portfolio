@@ -10,8 +10,10 @@ import { ExperienceSection } from './components/ExperienceSection';
 import { EducationSection } from './components/EducationSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import { AcademicArticlesSection } from './components/AcademicArticlesSection';
-// import { BlogSection } from './components/BlogSection';
+// ⛔ Seção do TCC removida temporariamente — vou arrumar isso manualmente depois.
+// import { AcademicArticlesSection } from './components/AcademicArticlesSection';
+import { RoadmapsSection } from './components/RoadmapsSection';
+import { BlogSection } from './components/BlogSection';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('sobre');
@@ -49,7 +51,8 @@ const App: React.FC = () => {
           { name: 'Node.js', max: 100 },
           { name: 'Golang', max: 100 },
           { name: 'DevOps', max: 100 },
-          { name: 'C#', max: 100 }
+          { name: 'C#', max: 100 },
+          { name: 'Claude Code', max: 100 }
         ],
         shape: 'circle',
         splitNumber: 4,
@@ -82,7 +85,7 @@ const App: React.FC = () => {
           color: 'rgb(99, 102, 241)'
         },
         data: [{
-          value: [80, 90, 80, 70, 60, 60],
+          value: [80, 90, 80, 70, 60, 60, 65],
           name: 'Habilidades',
           symbol: 'circle',
           symbolSize: 6,
@@ -133,17 +136,17 @@ const App: React.FC = () => {
       />
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-24">
+      <main className="max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-24">
         {/* About Section */}
         <AboutSection />
+
+        {/* Projects Section */}
+        <ProjectsSection />
 
         {/* Skills Section */}
         <SkillsSection
           chartRef={chartRef}
         />
-
-        {/* Projects Section */}
-        <ProjectsSection />
 
         {/* Experience Section */}
         <ExperienceSection />
@@ -151,11 +154,14 @@ const App: React.FC = () => {
         {/* Education Section */}
         <EducationSection />
 
-        {/* Academic Articles Section */}
-        <AcademicArticlesSection />
+        {/* ⛔ TCC / Academic Section — removido temporariamente, arrumar manualmente depois */}
+        {/* <AcademicArticlesSection /> */}
+
+        {/* Roadmaps Section */}
+        <RoadmapsSection />
 
         {/* Blog Section */}
-        {/* <BlogSection /> */}
+        <BlogSection />
 
         {/* Contact Section */}
         <ContactSection
