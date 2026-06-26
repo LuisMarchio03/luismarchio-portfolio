@@ -37,30 +37,30 @@ export const ContactSection = ({
 
             <div className="space-y-6 mt-8">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
+                <div className="w-12 h-12 shrink-0 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
                   <FontAwesomeIcon icon={faEnvelope} className="text-2xl" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-gray-400">Email</p>
-                  <p className="text-white">luisgabrielmarchio75@gmail.com</p>
+                  <p className="text-white break-words">luisgabrielmarchio75@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
+                <div className="w-12 h-12 shrink-0 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
                   <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-gray-400">Telefone</p>
                   <p className="text-white">+55 (64) 9 9991-8525</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
+                <div className="w-12 h-12 shrink-0 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="text-2xl" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-gray-400">Localização</p>
                   <p className="text-white">Mineiros, Goiás, Brasil</p>
                 </div>

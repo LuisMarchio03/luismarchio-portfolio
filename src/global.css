@@ -114,7 +114,15 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    /* Rolagem suave + compensa a navbar sticky ao pular para âncoras (#sobre etc) */
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    /* Rede de segurança contra scroll horizontal (clip != hidden: não quebra o sticky) */
+    overflow-x: clip;
+  }
   body {
     @apply bg-background text-foreground;
+    overflow-x: clip;
   }
 }

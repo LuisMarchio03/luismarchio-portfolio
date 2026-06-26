@@ -15,10 +15,10 @@ export const AboutSection = () => {
                                 className="w-full h-full object-cover object-top"
                             />
                         </div>
-                        <div className="absolute -bottom-6 -right-6 bg-indigo-900/80 backdrop-blur-lg p-6 rounded-2xl border border-indigo-700/50 shadow-xl">
+                        <div className="absolute -bottom-4 -right-2 p-4 md:-bottom-6 md:-right-6 md:p-6 bg-indigo-900/80 backdrop-blur-lg rounded-2xl border border-indigo-700/50 shadow-xl">
                             <div className="text-center">
-                                <p className="text-4xl font-bold text-white mb-1">3+</p>
-                                <p className="text-sm text-indigo-200">Anos de Experiência</p>
+                                <p className="text-3xl md:text-4xl font-bold text-white mb-1">3+</p>
+                                <p className="text-xs md:text-sm text-indigo-200">Anos de Experiência</p>
                             </div>
                         </div>
                     </div>
@@ -29,20 +29,20 @@ export const AboutSection = () => {
                         <span className="absolute -bottom-2 left-0 w-1/3 h-1 bg-indigo-600"></span>
                     </h2>
                     <p className="text-gray-300 mb-6 leading-relaxed">
-                        Sou um desenvolvedor Full-Stack apaixonado por tecnologia, com foco especial em arquitetura de software e soluções backend de alta performance. Atualmente, complemento minha formação acadêmica em Sistemas de Informação na UNIFIMES, ao mesmo tempo em que atuo como Desenvolvedor Full-Stack Pleno, construindo soluções tecnológicas inovadoras.
+                        Sou um desenvolvedor Full-Stack apaixonado por tecnologia, com foco especial em arquitetura de software e soluções backend de alta performance. Bacharel em Sistemas de Informação pela UNIFIMES, atuo como Desenvolvedor Full-Stack Pleno construindo soluções tecnológicas inovadoras e, atualmente, me especializo em arquitetura de software, cloud e cybersecurity.
                     </p>
                     <p className="text-gray-300 mb-8 leading-relaxed">
                         Minha trajetória no universo da programação teve início em 2019, quando descobri minha vocação tecnológica através de modificações de códigos de jogos. Essa experiência inicial despertou uma curiosidade profunda que rapidamente se transformou em uma paixão pelo desenvolvimento de software.
                     </p>
 
-                    <div className="grid grid-cols-2 gap-6 mb-8">
-                        <div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div className="min-w-0">
                             <h4 className="text-indigo-400 font-medium mb-2">Nome</h4>
                             <p className="text-white">Luís Gabriel Marchió Batista</p>
                         </div>
-                        <div>
+                        <div className="min-w-0">
                             <h4 className="text-indigo-400 font-medium mb-2">Email</h4>
-                            <p className="text-white">luisgabrielmarchio75@gmail.com</p>
+                            <p className="text-white break-words">luisgabrielmarchio75@gmail.com</p>
                         </div>
                         <div>
                             <h4 className="text-indigo-400 font-medium mb-2">Localização</h4>
@@ -54,8 +54,10 @@ export const AboutSection = () => {
                         </div>
                     </div>
 
-                    <Button className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg font-medium">
-                        <FontAwesomeIcon icon={faDownload} /> Baixar CV
+                    <Button asChild className="!rounded-button whitespace-nowrap bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg font-medium">
+                        <a href="/curriculo.pdf" download="Curriculo-Luis-Gabriel-Marchio-Batista.pdf">
+                            <FontAwesomeIcon icon={faDownload} /> Baixar Currículo
+                        </a>
                     </Button>
                 </div>
             </div>

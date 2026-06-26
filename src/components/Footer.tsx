@@ -45,7 +45,7 @@ export const Footer = () => {
       <div>
         <h4 className="text-lg font-semibold mb-6 text-white">Contato</h4>
         <ul className="space-y-3">
-          <li className="text-gray-400"><FontAwesomeIcon icon={faEnvelope} className="text-indigo-400" /> luisgabrielmarchio75@gmail.com</li>
+          <li className="text-gray-400 break-words"><FontAwesomeIcon icon={faEnvelope} className="text-indigo-400" /> luisgabrielmarchio75@gmail.com</li>
           <li className="text-gray-400"><FontAwesomeIcon icon={faWhatsapp} className="text-indigo-400" /> +55 (64) 9 9991-8525</li>
           <li className="text-gray-400"><FontAwesomeIcon icon={faMapMarkerAlt} className="text-indigo-400" /> Mineiros, Goiás, Brasil</li>
         </ul>

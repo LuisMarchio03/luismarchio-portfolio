@@ -47,7 +47,7 @@ export const HeroSection = ({
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-500 to-blue-500">Luís Gabriel Marchió Batista</span>
                         </h1>
                         <p className="text-lg md:text-xl mb-8 text-gray-300 leading-relaxed max-w-xl">
-                            Estudante de Sistemas de Informação apaixonado por backend, arquitetura de sistemas e computação distribuída. Minha jornada no desenvolvimento começou em 2019 modificando códigos de jogos.
+                            Bacharel em Sistemas de Informação, apaixonado por backend e computação distribuída, hoje me especializando em arquitetura de software, cloud e cybersecurity. Minha jornada no desenvolvimento começou em 2019 modificando códigos de jogos.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button
@@ -55,8 +55,10 @@ export const HeroSection = ({
                                 className="!rounded-button whitespace-nowrap w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg font-medium">
                                 Ver Projetos
                             </Button>
-                            <Button className="!rounded-button whitespace-nowrap w-full sm:w-auto bg-transparent hover:bg-white/10 border border-white/30 text-white px-8 py-6 text-lg font-medium">
-                                <FontAwesomeIcon icon={faDownload} /> Baixar CV
+                            <Button asChild className="!rounded-button whitespace-nowrap w-full sm:w-auto bg-transparent hover:bg-white/10 border border-white/30 text-white px-8 py-6 text-lg font-medium">
+                                <a href="/curriculo.pdf" download="Curriculo-Luis-Gabriel-Marchio-Batista.pdf">
+                                    <FontAwesomeIcon icon={faDownload} /> Baixar Currículo
+                                </a>
                             </Button>
                         </div>
                         <div className="flex gap-6 mt-10 md:mt-12">

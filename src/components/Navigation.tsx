@@ -37,8 +37,11 @@ export const Navigation = ({
     };
 
     useEffect(() => {
-        const sections = document.querySelectorAll("section");
+        const sections = document.querySelectorAll("section[id]");
 
+        // Scroll-spy via faixa estreita perto do topo da viewport.
+        // Usar threshold 0.5 falhava no mobile: seções mais altas que a tela
+        // nunca atingem 50% de visibilidade e o destaque "travava".
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -47,7 +50,7 @@ export const Navigation = ({
                     }
                 });
             },
-            { threshold: 0.5 }
+            { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
         );
 
         sections.forEach((section) => observer.observe(section));
